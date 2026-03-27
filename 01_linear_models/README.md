@@ -41,10 +41,11 @@ RMSE is measured in log(SalePrice) units — a validation RMSE of 0.1160 corresp
 - smallest overfitting gap
 - automatic feature selection: 162 of 245 features (66%) were zeroed out
 
-<img width="2030" height="974" alt="image" src="https://github.com/user-attachments/assets/2cfe2622-0fe8-4aaa-bd30-f34de89b842c" />
+<img width="1999" height="948" alt="image" src="https://github.com/user-attachments/assets/cf9bbee1-7408-4b0d-a392-b100be92e0f7" />
 
 Lasso predictions closely follow actual prices across the full validation set (292 homes). Larger deviations are visible at the extremes of the price distribution.
 
+<img width="1744" height="929" alt="image" src="https://github.com/user-attachments/assets/0f0ffa6e-532d-4f7a-a511-1317e5871745" />
 
 
 ## Key Findings
@@ -61,13 +62,13 @@ Lasso predictions closely follow actual prices across the full validation set (2
 - A non-linear relationship between `HouseAge` and `SalePrice` was identified during feature engineering. A degree-3 polynomial fit captures the pattern significantly better than a linear fit: prices drop steeply for homes 
 aged 15–60 years, then stabilize. Linear regression cannot fully capture this non-linear relationship, leading to systematic errors for very new and very old homes.
 
-
+<img width="2188" height="620" alt="image" src="https://github.com/user-attachments/assets/f93d78d2-1533-4cdc-9abc-dc21ce73de5f" />
 
 ## Next Steps
 
 A non-linear relationship between `HouseAge` and `SalePrice` was identified during feature engineering and confirmed visually using polynomial regression fits (degree 1–3).
 
-A follow-up project will focus on comparing Polynomial Regression, Step Functions, and Regression Splines with the goal of incorporating the best method into this pipeline.
+A follow-up project will focus on nonlinear modeling and comparing Polynomial Regression, Step Functions, and Regression Splines with the goal of incorporating the best method into this pipeline.
 
 ## Libraries
 
